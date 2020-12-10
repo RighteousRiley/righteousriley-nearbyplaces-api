@@ -9,14 +9,14 @@ app.get('/', (request, response) =>  {
     response.send("Gamer, you made it")
 })
 
-app.post('/place', (request, response) {
+app.post('/place', (request, response) => {
 // change
 })
 
-app.get('/places', (request, response) {
+app.get('/places', (request, response) => {
 
 })
 
-app.get('/search/:searchTerm/:location', (request, response) {
+app.get('/search/:searchTerm/:location', (request, response) => {
 
 })
