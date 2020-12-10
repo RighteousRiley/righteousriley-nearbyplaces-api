@@ -20,3 +20,7 @@ app.get('/places', (request, response) => {
 app.get('/search/:searchTerm/:location', (request, response) => {
 
 })
+
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`);
+})
