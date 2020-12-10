@@ -1,4 +1,5 @@
-[
+{
+    [
     {
         name: "Applebee's Grill + Bar",
         hasDelivery: "Yes",
@@ -36,3 +37,4 @@
         thumb: lair
     }
 ]
+}
