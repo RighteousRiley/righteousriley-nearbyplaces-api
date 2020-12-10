@@ -5,7 +5,7 @@ let data = require('./data')
 const app = express()
 const port = process.env.PORT || 3002
 
-app.use('cors')
+app.use(cors)
 app.use(bodyParser)
 
 app.get('/', (request, response) =>  {
@@ -17,16 +17,11 @@ app.post('/place', (request, response) => {
 })
 
 app.get('/places', (request, response) => {
-    response.json({
-        name: "Applebee's Grill + Bar",
-        hasDelivery: "Yes",
-        hasTakeOut: "Yes",
-        address: "5870 East Broadway",
-        phoneNum: "(520) 750-9780",
-        type: "American, Sports Bar",
-        thumb: applePic
-    })
-})
+    let metadata = data.places.map(x => {
+        return {name: x.name, hasDelivery: "Yes", hasTakeOut: "Yes", address: "123 South Campbell", phoneNum: "(520) 125-1538", type: "Mexican, Small Plates", thumb: ""}
+    });
+    response.json(metadata)
+});
 
 app.get('/search/:searchTerm/:location', (request, response) => {
 
