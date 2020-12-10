@@ -1,0 +1,6 @@
+dbname=dd79m1u38dcuu2
+host=ec2-54-84-98-18.compute-1.amazonaws.com
+port=5432
+user=mkbsrmfyqzdwpi
+password=b8dff19110ea6b32e6477236fee3f2174807f6a7519406df97d621d11f1c1d09
+sslmode=require"

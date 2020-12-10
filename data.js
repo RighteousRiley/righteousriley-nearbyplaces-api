@@ -1,4 +1,4 @@
-{places: [
+let places= [
     {
         name: "Applebee's Grill + Bar",
         hasDelivery: "Yes",
@@ -35,4 +35,6 @@
         type: "BBQ, American",
         thumb: "lair"
     }
-]}
+]
+
+module.exports = places;
