@@ -4,6 +4,11 @@ let data = {}
 const app = express()
 const port = process.env.PORT || 3002
 
+
+app.get('/', function(request, response) {
+    response.send("Gamer, you made it")
+})
+
 app.post('/place', function(request, response) {
 // change
 })
