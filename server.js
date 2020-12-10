@@ -17,7 +17,15 @@ app.post('/place', (request, response) => {
 })
 
 app.get('/places', (request, response) => {
-    response.json(data)
+    response.json({
+        name: "Applebee's Grill + Bar",
+        hasDelivery: "Yes",
+        hasTakeOut: "Yes",
+        address: "5870 East Broadway",
+        phoneNum: "(520) 750-9780",
+        type: "American, Sports Bar",
+        thumb: applePic
+    })
 })
 
 app.get('/search/:searchTerm/:location', (request, response) => {
